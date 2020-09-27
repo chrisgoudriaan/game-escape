@@ -1,0 +1,77 @@
+<html>
+<head> <title> escape the prison </title> <head>
+		<script>
+			
+
+			var keuze
+			
+			alert("je zit in een gevangenis");
+			alert("je hebt een pakketje");
+			keuze = prompt("wat zit er in het pakketje? rpg, vijl, drilboor of teleporter");
+			
+			if(keuze == "rpg"){
+				alert("je schiet met de rpg recht recht tegen de muur. je blaast hiermee ook jezelf op. Maarja wat verwacht je.");
+				alert("je bent dood....");
+			}
+			else if(keuze == "vijl"){
+				keuze = prompt("je pakt de vijl, maar waar ga je hem op gebruiken? deur of raam?");
+
+				if(keuze == "raam"){
+					alert("je vijlt het raam open en springt er meteen uit, maar je zit op de 46 verdieping.");
+					alert("splat!!!!");
+				}
+				else if(keuze == "deur"){
+					alert("je gebruikt de vijl op de deur, maar net nadat je de cel uit bent lopen er 2 guards binnen.");
+					alert("je rent een deur binnen");
+					keuze = prompt("je zit in een kast en er staan 2 guards buiten. je ziet een granaat en een luchtschacht");
+
+					if(keuze == "granaat"){
+						alert("je gooit de granaat, maar hij stuitert gelijk van de muur weer naar binnen");
+						alert("je hebt jezelf opgeblazen");
+					}
+					else if(keuze == "luchtschacht"){
+						keuze = prompt("je klimt de luchtschacht in. ga je naar boven of naar beneden");
+
+						if(keuze == "boven"){
+							keuze = prompt("je komt op het dak. je ziet 2 wc-onstoppers en een parachute wat gebruik je?");
+							if(keuze == "wc-onstoppers"){
+								alert("je gebruikt de wc-onstoppers om naar beneden teklimmen");
+								alert("ze plakken verassend goed vast aan de muur");
+								alert("je komt zonder enkele problemen naar beneden");
+								alert("je bent ontsnapt!!!");
+							}
+							else if(keuze == "parachute"){
+								alert("je springt van het dak van de gevangenis");
+								alert("maar de parachute gaat niet open");
+								alert("splat!!!");
+							}
+						}
+						else if(keuze == "beneden"){
+							alert("je gaat naar beneden en valt door een luik");
+							alert("je beland in een andere cel");
+							alert("het luik is tehoog om er bij te komen");
+							alert("je bent weer opgesloten");
+						}	
+					}
+				}	
+			}
+			else if(keuze == "drilboor"){
+				if(Math.random() < 0.5) {
+    			alert("de drilboor explodeert")
+    			alert("L")
+    			}
+    			else{
+    				alert("de drilboor gaat aan en je boord in een keer de gevangenis uit");
+    				alert("je bent ontsnapt!!");
+    		}
+
+			}
+			else if(keuze == "teleporter"){
+				alert("je weet niet hoe de teleporter werkt");
+				alert("je drukt maar een paarknoppen in een het werkt op een of andere manier.");
+				alert("je wordt naar een schietbaan geteleporteerd.");
+				alert("je wordt door je hoofd geschoten");
+			}
+	</script>
+
+</html>
